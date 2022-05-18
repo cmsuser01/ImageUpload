@@ -16,7 +16,7 @@ const ReactS3Client = new S3(config);
 function App() {
   function awsImageUpload(oEvent){
     ReactS3Client
-    .uploadFile(oEvent.target.files[0], "App")
+    .uploadFile(oEvent.target.files[0], "newimage")
     .then(data => console.log(data))
     .catch(err => console.error(err))
 
